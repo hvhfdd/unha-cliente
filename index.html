@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento - Nanda Nail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Agende seu Atendimento - Nanda Nail</h1>
+        <p>Preencha os dados abaixo para agendar seu atendimento.</p>
+    </header>
+
+    <main>
+        <form id="agendamentoForm">
+            <label for="clienteNome">Nome:</label>
+            <input type="text" id="clienteNome" required>
+
+            <label for="tipoServico">Tipo de Serviço:</label>
+            <select id="tipoServico" required>
+                <option value="Manicure">Manicure</option>
+                <option value="Pedicure">Pedicure</option>
+                <option value="Nail Art">Nail Art</option>
+            </select>
+
+            <label for="dataAgendamento">Data do Agendamento:</label>
+            <input type="datetime-local" id="dataAgendamento" required>
+
+            <label for="telefoneCliente">Telefone:</label>
+            <input type="tel" id="telefoneCliente" required>
+
+            <button type="submit">Agendar Atendimento</button>
+        </form>
+
+        <div id="msgResposta"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nanda Nail. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script_cliente.js"></script>
+</body>
+</html>
