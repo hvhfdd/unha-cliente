@@ -4,11 +4,11 @@ import java.net.*;
 public class Client {
     public static void main(String[] args) {
         try {
-            // O IP do servidor deve ser o IP público do computador que está rodando o servidor
-            String serverAddress = "SEU_ENDERECO_IP"; // Substitua pelo IP do servidor
-            int serverPort = 12345;
+            // IP do servidor - substitua com o IP do servidor
+            String serverAddress = "192.168.1.10";  // IP do servidor (na mesma rede local)
+            int serverPort = 12345;  // A porta que o servidor está escutando
 
-            // Conecta ao servidor
+            // Conectar ao servidor
             Socket socket = new Socket(serverAddress, serverPort);
             System.out.println("Conectado ao servidor em " + serverAddress + ":" + serverPort);
 
@@ -33,3 +33,4 @@ public class Client {
         }
     }
 }
+
